@@ -11,7 +11,7 @@ using namespace std;
 map<int64_t, ChessEngine> games;
 
 int main() {
-    Bot bot("7873607640:AAGmHAHivybgXxE8FNVYhh5wsFPYqnNAkcw");
+    Bot bot("Token");
 
     bot.getEvents().onCommand("start", [&bot](Message::Ptr message) {
         bot.getApi().sendMessage(message->chat->id, "Привіт! Я шаховий бот. Використовуйте /newgame, щоб почати нову гру.");
